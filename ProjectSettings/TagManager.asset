@@ -3,24 +3,27 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Trampolina
+  - Igrac
+  - Rusenje
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Pozadina
   - Water
   - UI
+  - Namjestaj
+  - 
+  - Macka
   - 
   - 
   - 
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Pod
   - 
   - 
   - 
