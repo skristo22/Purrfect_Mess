@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class BrojanjeObjekata : MonoBehaviour
 {
@@ -47,7 +48,7 @@ public class BrojanjeObjekata : MonoBehaviour
 
     void WinGame()
     {
-        Debug.Log("🎉 POBJEDA! Sve si srušila!");
-        // ovdje kasnije ide end screen
+        Debug.Log("POBJEDA! Sve si srusio/la!");
+        SceneManager.LoadScene("Pobjeda");
     }
 }
