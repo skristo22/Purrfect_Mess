@@ -32,18 +32,15 @@ public class CatController : MonoBehaviour
         inputX = Input.GetAxisRaw("Horizontal");
         grounded = IsGrounded();
 
-        // Jump
-        if (Input.GetKeyDown(KeyCode.Space) && grounded)
+        if (Input.GetKeyDown(KeyCode.Space) && grounded || Input.GetKeyDown(KeyCode.W) && grounded)
         {
             rb.velocity = new Vector2(rb.velocity.x, 0f);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
 
-        // Animator parametri
         anim.SetFloat("Speed", Mathf.Abs(inputX));
         anim.SetBool("Grounded", grounded);
 
-        // Flip sprite (lijevo/desno)
         if (Mathf.Abs(inputX) > 0.01f)
         {
             Vector3 s = transform.localScale;

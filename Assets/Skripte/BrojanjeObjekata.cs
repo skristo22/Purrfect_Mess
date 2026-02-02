@@ -8,7 +8,7 @@ public class BrojanjeObjekata : MonoBehaviour
 {
     public static BrojanjeObjekata Instance;
 
-    public int objectsToDestroy = 5;
+    public int objectsToDestroy = 10;
     public int destroyedCount = 0;
 
     public TextMeshProUGUI counterText;
@@ -48,7 +48,6 @@ public class BrojanjeObjekata : MonoBehaviour
 
     void WinGame()
     {
-        Debug.Log("POBJEDA! Sve si srusio/la!");
         SceneManager.LoadScene("Pobjeda");
     }
 }

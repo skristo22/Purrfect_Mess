@@ -15,8 +15,6 @@ public class RusenjeObjekata : MonoBehaviour
             alreadyCounted = true;
 
             BrojanjeObjekata.Instance.ObjectHitGround();
-
-            // opcionalno: zvuk / razbijanje / animacija
         }
     }
 }
